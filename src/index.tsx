@@ -43,9 +43,6 @@ export const Avatar = React.memo((props: Props) => {
 
   const svgString = renderToString(avatar);
 
-
-  console.log(svgString);
-
   // const encodedSvgString = `data:image/svg+xml;utf8,${encodeURIComponent(
   //   svgString
   // )}`.toString();

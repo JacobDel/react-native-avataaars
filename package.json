@@ -10,7 +10,7 @@
   ],
   "homepage": "https://github.com/JacobDel/avataaars",
   "bugs": "https://github.com/JacobDel/avataaars/issues",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "React Native component for Avataaars",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,7 +24,7 @@
     "build": "rm dist/* && tsc"
   },
   "peerDependencies": {
-    "react-native-svg": "^13.13.0"
+    "react-native-svg": "^15.8.0"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "avataaars": "https://github.com/JacobDel/avataaars#2.2.1",
-    "react-native-svg": "^13.13.0",
+    "react-native-svg": "^15.8.0",
     "text-encoding": "^0.7.0"
   }
 }
