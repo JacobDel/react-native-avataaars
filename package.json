@@ -8,20 +8,23 @@
     "react-native-avataaars",
     "avatar"
   ],
-  "homepage": "https://github.com/tom555my/react-native-avataaars",
-  "bugs": "https://github.com/tom555my/react-native-avataaars/issues",
-  "version": "2.0.1",
+  "homepage": "https://github.com/JacobDel/avataaars",
+  "bugs": "https://github.com/JacobDel/avataaars/issues",
+  "version": "3.0.0",
   "description": "React Native component for Avataaars",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
-    "url": "https://github.com/tom555my/react-native-avataaars",
+    "url": "https://github.com/JacobDel/avataaars",
     "type": "git"
   },
   "author": "Tommy Chung <tom555my@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "rm dist/* && tsc"
+  },
+  "peerDependencies": {
+    "react-native-svg": "^13.13.0"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
