@@ -9,18 +9,16 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-import * as React from "react";
-import { SvgXml } from "react-native-svg";
-import "./globals.js";
-import { PixelRatio } from "react-native";
-import { renderToString } from "react-dom/server";
-import { Avatar as AvatarReact } from "avataaars";
+import * as React from 'react';
+import { SvgXml } from 'react-native-svg';
+import './globals.js';
+import { PixelRatio } from 'react-native';
+import { renderToString } from 'react-dom/server';
+import { Avatar as AvatarReact } from 'avataaars';
 export var Avatar = React.memo(function (props) {
     var size = props.size;
-    var avatar = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({ style: {
-            width: PixelRatio.getPixelSizeForLayoutSize(size),
-            height: PixelRatio.getPixelSizeForLayoutSize(size),
-        } }, props))); }, [props]);
+    var size_ = PixelRatio.getPixelSizeForLayoutSize(size);
+    var avatar = React.useMemo(function () { return (React.createElement(AvatarReact, __assign({}, props))); }, [props]);
     var svgString = renderToString(avatar);
-    return React.createElement(SvgXml, { xml: svgString, width: "100%", height: "100%" });
+    return (React.createElement(SvgXml, { xml: svgString, width: "100%", height: "100%" }));
 });

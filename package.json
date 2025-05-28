@@ -24,7 +24,7 @@
     "build": "rm dist/* && tsc"
   },
   "peerDependencies": {
-    "react-native-svg": "^15.8.0"
+    "react-native-svg": "^15.12.0"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
@@ -36,7 +36,6 @@
   },
   "dependencies": {
     "avataaars": "https://github.com/JacobDel/avataaars#2.2.1",
-    "react-native-svg": "^15.8.0",
     "text-encoding": "^0.7.0"
   }
 }
