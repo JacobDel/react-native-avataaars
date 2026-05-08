@@ -4,7 +4,7 @@ import {SvgXml, SvgCss, SvgUri, SvgCssUri} from 'react-native-svg';
 
 import './globals.js'; // https://github.com/facebook/hermes/issues/948#issuecomment-1484240071
 import {PixelRatio} from 'react-native';
-import {renderToString} from 'react-dom/server';
+import {renderToString} from 'react-dom/server.node';
 import {Avatar as AvatarReact, Piece as PieceReact} from 'avataaars';
 
 export interface Props {
