@@ -21,7 +21,7 @@
   "author": "Tommy Chung <tom555my@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm dist/* && tsc",
+    "build": "rm -rf dist && tsc",
     "test": "jest"
   },
   "peerDependencies": {
