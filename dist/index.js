@@ -13,7 +13,7 @@ import * as React from 'react';
 import { SvgXml } from 'react-native-svg';
 import './globals.js';
 import { PixelRatio } from 'react-native';
-import { renderToString } from 'react-dom/server.node';
+import { renderToString } from './renderToString';
 import { Avatar as AvatarReact } from 'avataaars';
 export var Avatar = React.memo(function (props) {
     var size = props.size;

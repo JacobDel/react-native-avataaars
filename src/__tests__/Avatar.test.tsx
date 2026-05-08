@@ -17,7 +17,7 @@ jest.mock('react-native-svg', () => ({
 const MOCK_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 280"><g id="avatar"/></svg>';
 
-jest.mock('react-dom/server.node', () => ({
+jest.mock('../renderToString', () => ({
   renderToString: jest.fn(
     () =>
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 280"><g id="avatar"/></svg>',
@@ -30,7 +30,7 @@ jest.mock('../globals.js', () => {});
 import * as React from 'react';
 import {act, create} from 'react-test-renderer';
 import {PixelRatio} from 'react-native';
-import {renderToString} from 'react-dom/server.node';
+import {renderToString} from '../renderToString';
 import {Avatar, Props} from '../index';
 
 // Helper: render inside act() so React 19's concurrent scheduler flushes
